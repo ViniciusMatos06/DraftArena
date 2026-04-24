@@ -46,7 +46,7 @@ A modelagem BPMN descreve o fluxo de autenticação do usuário dentro do sistem
 
 ### 🖼️ Diagrama BPMN:
 
-*(Insira aqui a imagem ou link do diagrama BPMN)*
+![Cadastro e Gestão de Usuário (DraftArena) - BPMN](image.png)
 
 ---
 
