@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bem vindo de volta</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-card">
+        <header>
+            <div class="home-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="#1b7d3d">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+            </div>
+            <h1>Bem vindo de volta!</h1>
+        </header>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password">
+            </div>
+
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+
+        <footer class="register-footer">
+            <p>Não possui cadastro? <a href="/frontend/src/screens/TelasCadastro/cadastro.html">registre-se</a></p>
+        </footer>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

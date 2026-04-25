@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="dadosPessoais.css">
+</head>
+<body>
+    <main class="container">
+        <div class="info-card">
+            <header class="card-header">
+                <div class="nav-icons">
+                    <a href="cadastro.html" class="icon-link">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="#1b7d3d">
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                        </svg>
+                    </a>
+                    <a href="index.html" class="icon-link">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="#1b7d3d">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <h1>Dados pessoais</h1>
+            </header>
+
+            <form id="personalDataForm">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="apelido">Apelido (como deseja ser chamado)</label>
+                    <input type="text" id="apelido" placeholder="Opcional">
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="btn-proximo">Próximo</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="dadosPessoais.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione o modo de jogo</title>
+    <link rel="stylesheet" href="style-selecao.css">
+</head>
+<body>
+    <main class="content">
+        <h1>Selecione o <br> modo de jogo!</h1>
+
+        <div class="modes-container">
+            <div class="mode-card" onclick="selectMode('torneio')">
+                <div class="icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                        <path d="M8 21h8M12 17v4M7 4h10M17 4v7a5 5 0 0 1-10 0V4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="3" y="14" width="4" height="3" rx="1" />
+                        <rect x="17" y="12" width="4" height="5" rx="1" />
+                        <rect x="10" y="10" width="4" height="7" rx="1" />
+                    </svg>
+                </div>
+                <span>Criar um torneio</span>
+            </div>
+
+            <div class="mode-card" onclick="selectMode('amistoso')">
+                <div class="icon-box">
+                    <svg viewBox="0 0 24 24" fill="white">
+                        <path d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 11l3.42-3.42c.38-.38.89-.58 1.42-.58H14c.53 0 1.04.2 1.42.58l2.5 2.5a2 2 0 1 1-2.84 2.84L14 11.83V16h-4v-4l-3-3v10h-2V9c0-1.1.9-2 2-2z"/>
+                        <circle cx="18" cy="18" r="2" />
+                    </svg>
+                </div>
+                <span>Criar um jogo <br> amistoso</span>
+            </div>
+        </div>
+    </main>
+    <script src="script-selecao.js"></script>
+</body>
+</html>
