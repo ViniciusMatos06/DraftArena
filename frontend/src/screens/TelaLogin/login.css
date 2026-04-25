@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #d1d5db; /* Cinza de fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Aqui você pode adicionar a imagem dos campos como background */
+    background-image: url('campo-background.png');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    align-items: center;
+}
+
+/* Lado Visual */
+.visual-side {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.ball-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* Simulação da mancha verde atrás da bola */
+.ball-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to bottom, #84cc16, #166534);
+    border-radius: 50% 20% 50% 10%;
+    filter: blur(20px);
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Lado do Formulário */
+.form-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home-icon {
+    align-self: flex-start;
+    color: #166534;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.player-logo img {
+    width: 80px;
+    margin-top: -10px;
+}
+
+/* Estilização dos Inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #84cc16;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Botão */
+.btn-entrar {
+    width: 100%;
+    padding: 15px;
+    background-color: #15803d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #166534;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #374151;
+}
+
+.signup-text a {
+    color: #84cc16;
+    text-decoration: none;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .visual-side {
+        display: none; /* Oculta a imagem em telas muito pequenas */
+    }
+}
